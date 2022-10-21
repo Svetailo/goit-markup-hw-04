@@ -10,12 +10,19 @@
     --second-background-color: #F5F4FA;
     --button-primary-background-color: #2196f3;
     --button-secondary-background-color: #f5f4fa;
-  --secondary-background-color-hero-butto:#188CE8;}
+    --secondary-background-color-hero-butto:#188CE8;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --element-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
   body{
     background-color: var(--primary-background-color);
     color: var(--primaty-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;}
+
+
+    
 
     .container{ width: 1200px;
     padding-left: 15px;
@@ -40,7 +47,13 @@
     ul {margin: 0;
     padding: 0;}
 
-    
+    /* .mail-link::before{display:inline-flex; content:"" ;
+      /* width: 400px;
+      height: 400px; */
+      background-repeat: no-repeat;
+align-items: center;
+      background-image: url(../imeg/envelope.svg);
+    } */
 
   .link{ text-decoration: none; }
   .list{list-style: none;}
@@ -108,7 +121,25 @@ padding: 32px 0;}
 
   .hero{
     padding: 200px 0;
-    background-color: var(--footer-background-color);}
+    background-color: var(--footer-background-color);
+    max-width: 1600px;
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outline: 1px solid tomato;
+
+    background-image:linear-gradient( to right,  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeg/hero-sq.jpg);
+  
+  
+  }
+  .overlay{
+    
+  }
+
+
 
   .hero-title{font-family: 'Roboto';
     font-weight: 900;
@@ -166,8 +197,26 @@ background-color: var(--button-secondary-background-color)}
 .preference{padding-bottom: 0;}
 
 .preference-list{display: flex;
-gap: 30px;}
+gap: 30px;
 
+}
+
+.item-li::before{display: block;
+  content:"" ;
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  outline: 1px solid tomato;
+  /* background-image: url(../imeg/antenna.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--second-background-color);
+}
+
+.anten::before{background-image: url(../imeg/antenna.svg);}
+.clock::before{background-image: url(../imeg/clock.svg);}
+.diagram::before{background-image: url(../imeg/diagram.svg);}
+.astron::before{background-image: url(../imeg/astronaut.svg);}
 
 .visually-hidden {
     position: absolute;
@@ -214,7 +263,8 @@ margin-bottom: 50px;
 .team-card{
   width: calc(100%/4 - 30px/4*3);
    border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-background-color);}
+  background-color: var(--primary-background-color);
+box-shadow: var(--card-shadow);}
 
   .imeg{display: block;
     max-width: 100%;
