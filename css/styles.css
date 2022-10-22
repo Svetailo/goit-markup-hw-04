@@ -338,6 +338,47 @@ fill: var(--primary-background-color);
   justify-content: center;
   gap: 10px;
 }
+
+/* clients */
+/* .clients{
+  outline: 1px solid tomato;
+} */
+
+.clients-list{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-link{display: flex;
+width: 170px;
+height: 92px;
+justify-content: center;
+align-items: center;}
+
+.clients-icon{
+  fill: var(--color-link-web);
+}
+
+.clients-item{
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-link-web);
+  border-radius: 4px
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--button-primary-background-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+  fill: var(--accent-text-color);
+}
+
+
 /* footer */
 
 .logo-cellar{
