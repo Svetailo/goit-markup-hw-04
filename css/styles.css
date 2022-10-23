@@ -388,9 +388,33 @@ align-items: center;}
 
 
 .cellar{
-  background-color: var(--footer-background-color);}
-.web-doun{
-  padding:  60px 15px;}
+  background-color: var(--footer-background-color);
+  padding:  60px 15px;
+}
+
+  .cellar-title{
+    font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  margin-bottom: 20px;
+  }
+  .team-icon-link.foot{
+    fill: var(--primary-background-color);
+  }
+
+  .team-web.foot{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  
+
+.web-down{display: flex;
+  gap: 70px;
+  align-items: baseline;
+  }
+
 
 .adress{ font-style: normal;
   font-size: 14px;
@@ -417,17 +441,6 @@ align-items: center;}
 .adress:hover,
 .adress:focus{color: var(--accent-text-color);}
 
-
-.cellar-title{
-  font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-color: var(--primary-background-color);
-}
-.team-icon-link.foot{
-  fill: var(--primary-background-color);
-}
 
 
 
@@ -484,5 +497,4 @@ border-right: 1px solid var(--second-background-color) ;
 }
 
 
-  
 
